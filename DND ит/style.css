@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f6f9;
+    padding:20px;
+}
+
+header{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+header p{
+    color:#555;
+}
+
+.controls{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+
+input{
+    padding:10px;
+}
+
+button{
+    padding:10px 15px;
+    cursor:pointer;
+}
+
+.info{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+
+#message{
+    color:green;
+    font-weight:bold;
+}
+
+.board{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.column{
+    background:white;
+    min-height:500px;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 0 5px rgba(0,0,0,.1);
+}
+
+.column h2{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.task{
+    background:#e8f0fe;
+    margin-bottom:10px;
+    padding:10px;
+    border-radius:8px;
+    cursor:grab;
+}
+
+.task.dragging{
+    opacity:.5;
+}
+
+.column.drag-over{
+    background:#d7ffd9;
+}
+
+.task-buttons{
+    display:flex;
+    gap:5px;
+    margin-top:10px;
+}
+
+.task-buttons button{
+    flex:1;
+}

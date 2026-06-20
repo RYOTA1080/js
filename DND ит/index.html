@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Планировщик задач</h1>
+    <p>
+        Управление учебными заданиями, проектами,
+        подготовкой к экзаменам и личными делами.
+    </p>
+</header>
+
+<section class="controls">
+
+    <form id="taskForm">
+        <input
+            type="text"
+            id="taskInput"
+            placeholder="Введите задачу"
+            required
+        >
+
+        <button type="submit">
+            Добавить
+        </button>
+    </form>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Поиск задачи..."
+    >
+
+</section>
+
+<section class="info">
+
+    <div id="counter">
+        Всего задач: 0
+    </div>
+
+    <div id="message">
+        Готово к работе
+    </div>
+
+</section>
+
+<section class="board">
+
+    <div class="column" data-status="planned">
+        <h2>Запланировано</h2>
+        <div class="task-list"></div>
+    </div>
+
+    <div class="column" data-status="progress">
+        <h2>В работе</h2>
+        <div class="task-list"></div>
+    </div>
+
+    <div class="column" data-status="review">
+        <h2>На проверке</h2>
+        <div class="task-list"></div>
+    </div>
+
+    <div class="column" data-status="done">
+        <h2>Выполнено</h2>
+        <div class="task-list"></div>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
