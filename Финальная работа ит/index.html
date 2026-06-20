@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Информационный пузырь</title>
+
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<header>
+<h1>Симулятор информационного пузыря</h1>
+
+<div id="setup">
+    <h3>Выберите интересы</h3>
+
+    <label><input type="checkbox" value="Политика"> Политика</label><br>
+    <label><input type="checkbox" value="Технологии"> Технологии</label><br>
+    <label><input type="checkbox" value="Экология"> Экология</label><br>
+    <label><input type="checkbox" value="Экономика"> Экономика</label><br>
+    <label><input type="checkbox" value="Наука"> Наука</label><br><br>
+
+    <button onclick="startSimulation()">Старт</button>
+</div>
+
+<div id="controls" style="display:none;">
+    <button onclick="breakBubble()">🧊 Разорвать пузырь</button>
+    <button onclick="randomEvent()">🎲 Внешний шок</button>
+    <button onclick="toggleDebug()">🐞 Debug</button>
+</div>
+
+</header>
+
+<div id="app"></div>
+
+<canvas id="chart"></canvas>
+
+<script src="js/news.js"></script>
+<script src="js/algorithm.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
